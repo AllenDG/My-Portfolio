@@ -3,11 +3,11 @@ import Navbar from "../ui/navbar/Navbar";
 
 export default function HomeLayout() {
   return (
-    <div>
-      <Navbar />
-      <main className="min-h-[80vh] overflow-hidden">
+<div>
+  <Navbar />
+  <main className="min-h-[80vh] overflow-hidden">
         <Outlet />
       </main>
-    </div>
+</div>
   );
 }
