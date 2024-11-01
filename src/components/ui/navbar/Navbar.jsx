@@ -10,7 +10,9 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex items-center justify-center p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-full mx-auto w-fit space-x-6">
+    <nav className="flex items-center justify-center p-2 bg-white dark:bg-gray-800 border border-gray-300 rounded-full mx-auto w-fit space-x-6 mt-4">
+      {" "}
+      {/* Added mt-4 for top margin */}
       <div className="flex items-center space-x-10">
         {/* Home Icon */}
         <a href="/" className="relative group">
@@ -24,8 +26,9 @@ export default function Navbar() {
             <Pencil className="w-4 h-5 text-gray-900 dark:text-white group-hover:text-gray-600" />
           </div>
         </a>
-        {/* Separator */}
-        <div className="border-l border-gray-300 dark:border-gray-600 h-5 mx-2"></div>
+        {/* Separator with Gray Border */}
+        <div className="border-l border-gray-300 h-5 mx-2"></div>{" "}
+        {/* Removed dark:border-gray-600 to keep it gray */}
         {/* Dark Mode Toggle */}
         <div
           className="relative inline-flex items-center cursor-pointer"
