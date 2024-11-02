@@ -6,7 +6,7 @@ export default function RecentProject() {
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-bold">Recent Projects</h2>
         <a
-          href="/projects" // Change this to your actual projects page URL
+          href="/project" // Change this to your actual projects page URL
           className=" hover:underline text-xs"
         >
           View All
