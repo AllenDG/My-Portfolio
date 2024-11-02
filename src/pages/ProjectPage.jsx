@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import mockups from "@/data/mockups.json"; // Adjust the path based on your project structure
 import systems from "@/data/systems.json"; // Adjust the path based on your project structure
+import ProjectGrid from "@/components/ProjectGrid"; // Adjust the path based on your project structure
 
 export default function ProjectPage() {
   const [filter, setFilter] = useState("Mockup"); // Default to Mockup
@@ -39,22 +40,8 @@ export default function ProjectPage() {
         </button>
       </div>
 
-      {/* Project grid layout */}
-      <div className="grid grid-cols-3 gap-4 p-4">
-        {filteredProjects.map((project) => (
-          <div
-            key={project.id}
-            className="border border-gray-300 rounded-lg p-4 flex flex-col justify-between bg-white shadow-md"
-          >
-            <h3 className="text-lg font-semibold text-gray-800">
-              {project.title}
-            </h3>
-            <span className="mt-2 inline-block text-xs font-bold text-white bg-blue-500 rounded-full px-2 py-1">
-              {project.type}
-            </span>
-          </div>
-        ))}
-      </div>
+      {/* Use the ProjectGrid component to display the projects */}
+      <ProjectGrid projects={filteredProjects} />
     </main>
   );
 }
