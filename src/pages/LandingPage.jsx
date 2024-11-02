@@ -16,8 +16,9 @@ export default function LandingPage() {
         <Certifications />
         <TechStack />
         <RecentProject />
-        <BeyondCoding/>
+        <BeyondCoding />
         <Contact />
+       
       </div>
     </main>
   );
