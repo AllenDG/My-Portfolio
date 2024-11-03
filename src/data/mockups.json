@@ -1,7 +1,26 @@
 [
-    { "id": 1, "title": "Project A", "type": "Mockup" },
-    { "id": 2, "title": "Project B", "type": "Mockup" },
-    { "id": 3, "title": "Project C", "type": "Mockup" },
-    { "id": 4, "title": "Project E", "type": "Mockup" }
-  ]
-  
+  {
+    "id": 1,
+    "title": "ParkHub",
+    "description": "An innovative parking management system using IoT to monitor parking space availability and enhance user convenience.",
+    "viewLink": "https://github.com/username/parkhub",
+    "type": "Mockup",
+    "image": "/images/parkhub.png"
+  },
+  {
+    "id": 2,
+    "title": "UpangSpend",
+    "description": "A budgeting and expense tracking app aimed at helping students manage their finances effectively.",
+    "viewLink": "https://github.com/username/upangspend",
+    "type": "Mockup",
+    "image": "/images/upangspend.png"
+  },
+  {
+    "id": 3,
+    "title": "DriveEase",
+    "description": "A driver assistance app designed to provide real-time traffic updates and optimal route suggestions for smoother commutes.",
+    "viewLink": "https://github.com/username/driveease",
+    "type": "Mockup",
+    "image": "/images/driveease.png"
+  }
+]

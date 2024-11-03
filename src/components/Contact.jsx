@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <div className="border border-black-500 p-4 rounded-lg col-span-1 md:col-span-2 w-full ">
+    <div className="border border-black-500 p-4 rounded-lg col-span-2  w-full ">
       <h2 className="text-xl font-bold mb-4 ">Contact</h2>
 
       <div className="mb-4">

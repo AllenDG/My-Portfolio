@@ -26,7 +26,7 @@ export default function ProfileInfo() {
 
         {/* Buttons */}
         <div className="flex mt-4 space-x-2">
-          <Button variant="" as="a" href="mailto:Allenwalterfiestada@gmail.com">
+          <Button  as="a" href="mailto:Allenwalterfiestada@gmail.com">
             Send Email
           </Button>
           <Button
