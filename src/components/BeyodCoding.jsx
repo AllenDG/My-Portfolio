@@ -1,6 +1,6 @@
 export default function BeyondCoding() {
   return (
-    <div className="border border-black-500 p-4 rounded-lg col-span-3 md:row-span-1 w-full">
+    <div className="border border-black-500 p-4 rounded-lg col-span-3 md:col-span-1 w-full">
       <h2 className="text-xl font-bold mb-4 ">Beyond Coding</h2>
       <p className="text-xs mb-4">
         When I’m not immersed in coding, I dedicate my time to music. I find joy
