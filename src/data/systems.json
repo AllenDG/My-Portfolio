@@ -1,5 +1,26 @@
 [
-    { "id": 1, "title": "Project D", "type": "System" },
-    { "id": 2, "title": "Project F", "type": "System" }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Dormitory",
+    "description": "A platform that helps students and young professionals find dormitories and apartments with features like a subscription model, chatbot support, and property listings.",
+    "viewLink": "https://github.com/username/dormitory",
+    "type": "System",
+    "image": "/images/dormitory.png"
+  },
+  {
+    "id": 2,
+    "title": "MathWise",
+    "description": "An interactive math learning platform featuring games, leaderboards, and performance analytics to make math enjoyable and engaging.",
+    "viewLink": "https://github.com/username/mathwise",
+    "type": "System",
+    "image": "/images/mathwise.png"
+  },
+  {
+    "id": 3,
+    "title": "ParkHub",
+    "description": "A smart parking management system that uses IoT to track parking space availability, providing real-time data and pre-booking options.",
+    "viewLink": "https://github.com/username/parkhub",
+    "type": "System",
+    "image": "/images/parkhub.png"
+  }
+]
