@@ -1,5 +1,6 @@
 import { Home, Pencil, Sun, Moon } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -15,17 +16,17 @@ export default function Navbar() {
       {/* Added mt-4 for top margin */}
       <div className="flex items-center space-x-10">
         {/* Home Icon */}
-        <a href="/" className="relative group">
+        <Link to="/" className="relative group">
           <div className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-gray-300 transition duration-200">
             <Home className="w-4 h-5 text-gray-900 dark:text-white group-hover:text-gray-600" />
           </div>
-        </a>
+        </Link>
         {/* Project Icon */}
-        <a href="/project" className="relative group">
+        <Link to="/project" className="relative group">
           <div className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-gray-300 transition duration-200">
             <Pencil className="w-4 h-5 text-gray-900 dark:text-white group-hover:text-gray-600" />
           </div>
-        </a>
+        </Link>
         {/* Separator with Gray Border */}
         <div className="border-l border-gray-300 h-5 mx-2"></div>{" "}
         {/* Removed dark:border-gray-600 to keep it gray */}

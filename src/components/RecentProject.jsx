@@ -29,7 +29,7 @@ export default function RecentProject() {
               <FaGithub className="inline-block w-4 h-4" />
             </a>
             <a
-              href="https://project1.vercel.app"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className=" hover:text-gray-800"
@@ -55,7 +55,7 @@ export default function RecentProject() {
               <FaGithub className="inline-block w-4 h-4" />
             </a>
             <a
-              href="https://project2.vercel.app"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className=" hover:text-gray-800"
@@ -74,7 +74,7 @@ export default function RecentProject() {
           </p>
           <div className="flex space-x-4">
             <a
-              href="https://github.com/username/project3"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className=" hover:text-gray-800"
