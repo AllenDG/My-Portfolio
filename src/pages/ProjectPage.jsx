@@ -19,15 +19,15 @@ export default function ProjectPage() {
       : projects.filter((project) => project.type === filter);
 
   return (
-    <main className="w-full max-w-3xl mx-auto">
+    <main className="w-full max-w-3xl mx-auto p-5 ">
       {/* Button group for filtering projects */}
       <div className="flex justify-center mb-4 space-x-4 mt-10">
         <button
           onClick={() => setFilter("Mockup")}
           className={`py-2 px-4 rounded-lg transition-colors duration-200 ${
             filter === "Mockup"
-              ? "bg-black text-white"
-              : "bg-white text-black border border-gray hover:bg-gray-200"
+              ? "bg-black text-white dark:bg-gray-700 dark:text-white"
+              : "bg-white text-black border border-gray hover:bg-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700"
           }`}
         >
           Mockups
@@ -36,8 +36,8 @@ export default function ProjectPage() {
           onClick={() => setFilter("System")}
           className={`py-2 px-4 rounded-lg transition-colors duration-200 ${
             filter === "System"
-              ? "bg-black text-white"
-              : "bg-white text-black border border-gray hover:bg-gray-200"
+              ? "bg-black text-white dark:bg-gray-700 dark:text-white"
+              : "bg-white text-black border border-gray hover:bg-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700"
           }`}
         >
           Systems

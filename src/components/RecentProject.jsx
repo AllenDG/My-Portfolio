@@ -13,7 +13,7 @@ export default function RecentProject() {
           View All
         </a>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -21,7 +21,7 @@ export default function RecentProject() {
           >
             <h3 className="font-bold">{project.name}</h3>
             <p className="text-sm text-gray-500">{project.description}</p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mt-2">
               <a
                 href={project.githubUrl || "#"}
                 target="_blank"
