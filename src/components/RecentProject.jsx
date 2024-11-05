@@ -1,4 +1,5 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import projects from "@/data/projects.json"; // Adjust the path as needed
 
 export default function RecentProject() {
@@ -6,12 +7,9 @@ export default function RecentProject() {
     <section className="border border-black-500 p-4 rounded-lg col-span-3 w-full">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-bold">Recent Projects</h2>
-        <a
-          href="/project" // Change this to your actual projects page URL
-          className="hover:underline text-xs"
-        >
+        <Link to="/project" className="hover:underline text-xs">
           View All
-        </a>
+        </Link>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {projects.map((project, index) => (
@@ -19,25 +17,29 @@ export default function RecentProject() {
             key={index}
             className="border border-black-500 rounded-md p-4 transition-transform duration-200 hover:shadow-lg hover:-translate-y-1"
           >
-            <h3 className="font-bold">{project.name}</h3>
+            {/* Wrap project name in Link for navigation */}
+            <Link
+              to="/project/"
+              className="font-bold hover:underline"
+            >
+              {project.name}
+            </Link>
             <p className="text-sm text-gray-500">{project.description}</p>
             <div className="flex space-x-4 mt-2">
-              <a
-                href={project.githubUrl || "#"}
+              <Link
+                to={project.githubUrl || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-gray-800"
               >
-                <FaGithub className="inline-block w-4 h-4" />
-              </a>
-              <a
-                href={project.liveUrl || "#"}
+                <FaGithub className="inline-block w-4 h-4 hover:text-gray-800" />
+              </Link>
+              <Link
+                to={project.liveUrl || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-gray-800"
               >
-                <FaExternalLinkAlt className="inline-block w-4 h-4" />
-              </a>
+                <FaExternalLinkAlt className="inline-block w-4 h-4 hover:text-gray-800" />
+              </Link>
             </div>
           </div>
         ))}
