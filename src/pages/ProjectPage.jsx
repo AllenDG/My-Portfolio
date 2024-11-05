@@ -24,16 +24,20 @@ export default function ProjectPage() {
       <div className="flex justify-center mb-4 space-x-4 mt-10">
         <button
           onClick={() => setFilter("Mockup")}
-          className={`py-2 px-4 rounded-lg text-white ${
-            filter === "Mockup" ? "bg-blue-500" : "bg-gray-300"
+          className={`py-2 px-4 rounded-lg transition-colors duration-200 ${
+            filter === "Mockup"
+              ? "bg-black text-white"
+              : "bg-white text-black border border-gray hover:bg-gray-200"
           }`}
         >
           Mockups
         </button>
         <button
           onClick={() => setFilter("System")}
-          className={`py-2 px-4 rounded-lg text-white ${
-            filter === "System" ? "bg-blue-500" : "bg-gray-300"
+          className={`py-2 px-4 rounded-lg transition-colors duration-200 ${
+            filter === "System"
+              ? "bg-black text-white"
+              : "bg-white text-black border border-gray hover:bg-gray-200"
           }`}
         >
           Systems

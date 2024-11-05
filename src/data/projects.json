@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Dormitory",
+    "description": "An app connecting students with affordable nearby housing.",
+    "githubUrl": "https://github.com/username/project1",
+    "liveUrl": ""
+  },
+  {
+    "name": "Mathwise",
+    "description": "An app that teaches mathematics through engaging games.",
+    "githubUrl": "https://github.com/username/project2",
+    "liveUrl": ""
+  },
+  {
+    "name": "Parkhub",
+    "description": "An IoT solution that enhances parking efficiency using Arduino technology.",
+    "githubUrl": "",
+    "liveUrl": "https://project3.vercel.app"
+  }
+]
