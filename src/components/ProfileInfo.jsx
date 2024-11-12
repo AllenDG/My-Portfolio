@@ -1,7 +1,15 @@
 import { Button } from "@/components/ui/button";
 import myImage from "@/assets/images/myImage.png";
+import myCV from "@/assets/files/alfi.deguzman.pdf"; // Adjust the path as needed
 
 export default function ProfileInfo() {
+  const handleDownloadClick = () => {
+    const link = document.createElement("a");
+    link.href = myCV;
+    link.download = "Allen_Walter_De_Guzman_CV.pdf"; // Set the download file name
+    link.click();
+  };
+
   return (
     <div className="flex items-start space-x-4 rounded-lg p-4 mt-10">
       <div className="w-32 h-32 mb-4">
@@ -26,15 +34,10 @@ export default function ProfileInfo() {
 
         {/* Buttons */}
         <div className="flex mt-4 space-x-2">
-          <Button  as="a" href="mailto:Allenwalterfiestada@gmail.com">
+          <Button as="a" href="mailto:Allenwalterfiestada@gmail.com">
             Send Email
           </Button>
-          <Button
-            variant="secondary"
-            as="a"
-            href="/path-to-your-cv.pdf"
-            download
-          >
+          <Button variant="secondary" onClick={handleDownloadClick}>
             Download CV
           </Button>
         </div>
