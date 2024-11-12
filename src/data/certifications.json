@@ -2,21 +2,29 @@
   {
     "id": 1,
     "title": "Job Ready Employability Skills",
-    "date": "2024"
+    "date": "2024",
+    "image": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/Wadhwani%20Foundation%20Certificate%20-%2066fe29de1bc7867aa44a1ad5-1.png?alt=media&token=3a2625fd-44f3-4e1e-a418-b02dc94b133c"
   },
   {
     "id": 2,
     "title": "React JS (Beginner)",
-    "date": "2024"
+    "date": "2024",
+    "image": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/ReactJS-1.png?alt=media&token=959e0893-24e2-4260-9786-c54fc3f4e3f6"
   },
   {
     "id": 3,
     "title": "Introduction to Software Programming",
-    "date": "2024"
+    "date": "2024",
+    "image": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/ALLEN%20WALTER%20F.%20DE%20GUZMAN-1.png?alt=media&token=c7946da3-436d-4f6c-8c2a-59cb2b859e31"
+
   },
   {
     "id": 4,
     "title": "Web Development",
-    "date": "2023"
+    "date": "2023",
+    "image": "https://firebasestorage.googleapis.com/v0/b/test-2ac5c.appspot.com/o/cdbcd760-6a00-4982-aef1-5aabcaf7ebc1.jpg?alt=media&token=550ad2f6-e841-4949-a448-15a46ca1004d"
+
   }
+
+  
 ]

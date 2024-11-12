@@ -1,11 +1,14 @@
 import certifications from "@/data/certifications.json"; // Adjust path based on your folder structure
+import { Link } from "react-router-dom";
 
 export default function Certifications() {
   return (
     <section className="border border-black-500 p-4 rounded-lg max-w-xl col-span-3 md:col-span-1 row-span-1 md:row-span-2 w-full">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-bold">Certifications</h2>
-        <button className="hover:underline text-xs">View All</button>
+        <Link to="/certification">
+          <button className="hover:underline text-xs">View All</button>
+        </Link>
       </div>
       <div className="space-y-4">
         {certifications.map((cert) => (
