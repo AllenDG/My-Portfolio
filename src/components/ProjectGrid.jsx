@@ -1,4 +1,5 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function ProjectGrid({ projects }) {
   return (
@@ -17,23 +18,23 @@ export default function ProjectGrid({ projects }) {
             <p className="text-sm text-gray-500 mt-2">{project.description}</p>
 
             {/* GitHub and Vercel Links */}
-            <div className="flex space-x-4 mt-4">
-              <a
-                href={project.githubUrl}
+            <div className="flex space-x-4 mt-2">
+              {/* GitHub link */}
+              <Link
+                to={project.githubUrl || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-gray-800"
               >
-                <FaGithub className="w-5 h-5" />
-              </a>
-              <a
-                href={project.liveUrl}
+                <FaGithub className="inline-block w-4 h-4 hover:text-gray-800" />
+              </Link>
+              {/* Live project link */}
+              <Link
+                to={project.liveUrl || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-gray-800"
               >
-                <FaExternalLinkAlt className="w-5 h-5" />
-              </a>
+                <FaExternalLinkAlt className="inline-block w-4 h-4 hover:text-gray-800" />
+              </Link>
             </div>
           </div>
         ))}
