@@ -3,6 +3,7 @@ import HomeLayout from "@/components/layouts/HomeLayout";
 import LandingPage from "@/pages/LandingPage";
 import PageNotFound from "@/pages/PageNotFound";
 import ProjectPage from "@/pages/ProjectPage";
+import CertificationPage from "@/pages/CertificationPage";
 
 export const mainRoutes = createBrowserRouter([
   {
@@ -22,6 +23,12 @@ export const mainRoutes = createBrowserRouter([
         path: "project",
         element: <ProjectPage />,
       },
+      
     ],
+    
+  },
+  {
+    path: "certification",
+    element: <CertificationPage />,
   },
 ]);
