@@ -10,6 +10,16 @@ export default function ProfileInfo() {
     link.click();
   };
 
+  const handleEmailClick = () => {
+    const email = "Allenwalterfiestada@gmail.com";
+    const subject = "Hello, Allen!";
+    const body = "Hi Allen, I would like to discuss...";
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+    window.open(gmailLink, "_blank"); // Opens Gmail in a new tab
+  };
+
   return (
     <div className="flex items-start space-x-4 rounded-lg p-4 mt-10">
       <div className="w-32 h-32 mb-4">
@@ -34,9 +44,7 @@ export default function ProfileInfo() {
 
         {/* Buttons */}
         <div className="flex mt-4 space-x-2">
-          <Button as="a" href="mailto:Allenwalterfiestada@gmail.com">
-            Send Email
-          </Button>
+          <Button onClick={handleEmailClick}>Send Email</Button>
           <Button variant="secondary" onClick={handleDownloadClick}>
             Download CV
           </Button>
